@@ -28,28 +28,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         checkbox.setOnCheckedChangeListener(this);
     }
 
-    /**
-     *     @Override
-     *
-     *
-     *
-     *         todo = (CheckBox)findViewById(R.id.checkBox);
-     *         todo2 = (CheckBox)findViewById(R.id.checkBox2);
-     *         todo3 = (CheckBox)findViewById(R.id.checkBox3);
-     *
-     *         result = (TextView)findViewById(R.id.textView);
-     *
-     *         //
-     *         todo.setOnCheckedChangeListener(this);
-     *         todo2.setOnCheckedChangeListener(this);
-     *         todo3.setOnCheckedChangeListener(this);
-     *
-     *
-     *     }
-     * @param
-     */
 
-          public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
               String s = "";
               int i = 0;
 
@@ -58,24 +38,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
               }
 
               txt.setText(s);
-
-              /**
-               *               if(todo.isChecked()){
-               *                   i++;
-               *                   s += i + ". " + "끝내주게 숨쉬기\n";
-               *               }
-               *               if(todo2.isChecked()){
-               *                   i++;
-               *                   s += i + ". " + "간지나게 자기\n";
-               *               }
-               *               if(todo3.isChecked()){
-               *                   i++;
-               *                   s += i + ". " + "작살나게 밥먹기\n";
-               *               }
-               *
-               *               result.setText(s);
-               */
-
 
           }
 
